@@ -1,0 +1,27 @@
+extends ./_partials/_layout
+block content
+  .onLoggedOut.hidden
+    h1 Login
+    form
+      input(type="email", placeholder="email", required)
+      input(type="password", placeholder="password", required)
+      input.doRegister(type="button", value="Register")
+      input(type="submit", value="Login")
+      input.doResetPassword(type="button", value="Reset Password")
+  .onTempPassword.hidden
+    h1 Change Password
+    form
+      input(type="password", placeholder="Current Password")
+      input(type="password", placeholder="New Password")
+      input(type="submit", value="Change Password")
+  .onLoggedIn.hidden
+    h1 Hello
+    button.doLogout Logout
+    hr
+    h2 FavoFotos
+    form
+      input.url(type="url", placeholder="http://i.imgur.com/abc123")
+      input(type="submit", value="Add Foto")
+    hr
+    h2 Photos
+    .favFotos

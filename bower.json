@@ -1,0 +1,19 @@
+{
+  "name": "favo-fotos",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ldougher06/favo-fotos",
+  "authors": [
+    "logan dougher <logan.dougher@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "~2.2.5"
+  }
+}
